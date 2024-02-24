@@ -22,12 +22,60 @@ a {
 
 header {
     background-color: #edf7fb;
-    padding: 20px 15px;
+    padding: 10px 15px;
+    height: 90px;
+}
+
+.topBarNav {
+    margin-bottom: 20px;
+    border: 1px solid rgb(58, 158, 62);
+    overflow: hidden;
+    justify-content: center;
+    gap: 500px;
+}
+
+.leftToRight {
+    animation: leftToRight 10s infinite linear;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.rightToLeft {
+    animation: leftToRight 10s infinite linear;
+}
+
+@keyframes leftToRight {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.logoStyle {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
 }
 
 .navLinks {
     height: 25px;
     transition: 0.5s ease-in-out;
+}
+
+.navHeader {
+    align-items: center;
+    position: relative;
 }
 
 .navHeader .navLinks {
