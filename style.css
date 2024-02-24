@@ -1,12 +1,9 @@
+/* Utilities */
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-header {
-    background-color: skyblue;
-    padding: 20px 15px
 }
 
 a {
@@ -21,8 +18,28 @@ a {
     align-items: center;
 }
 
+/* Nav Styling */
+
+header {
+    background-color: #edf7fb;
+    padding: 20px 15px;
+}
+
+.navLinks {
+    height: 25px;
+    transition: 0.5s ease-in-out;
+}
+
 .navHeader .navLinks {
     margin: 0 45px;
+}
+
+.navLinks:hover {
+    border-top: 2px solid rgb(58, 158, 62);
+    border-bottom: 2px solid rgb(58, 158, 62);
+    background-color: #000;
+    color: #fff;
+    height: 20px;
 }
 
 .hamburger {
@@ -38,36 +55,166 @@ a {
     margin: 5px auto;
 }
 
-.bgImage {
+/* Hero Styles */
+
+.bgImageContainer {
     outline: 2px solid #000;
-    background-image: url(/images/pexels-fwstudio-129731.jpg);
+    background-image: url(/images/Untitled\ design.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    min-height: 500px;
+    min-height: 600px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .mainContent {
-    background-image: url(/images/IMG-20231126-WA0006-removebg.png);
+    background-image: url(/images/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: bottom 0px center;
+    background-position: center;
     min-height: 400px;
     width: 400px;
-    border-radius: 50%;
-    /* border: 2px solid red; */
+    border-radius: 20px;
     display: inline-block;
     box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-    /* transform: scale(1.00); */
+    position: relative;
+    z-index: 10;
 }
 
-.headingText {
+.contactBtn {
+    position: absolute;
+    bottom: 15px;
+    left: 160px;
+    background-color: #000;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 0 10px 0 10px;
+    transition: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.contactBtn:hover {
+    background-color: rgb(58, 158, 62);
+    color: #000;
+}
+
+.leftAnimated {
     border: 2px solid #fff;
     background-color: #fff;
     padding: 50px;
     margin-left: 50px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    opacity: 0;
+    border-radius: 10px;
+    animation: headText 5s ease-in-out;
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 2.3rem;
+    color: rgb(58, 158, 62);
+}
+
+.rightAnimated {
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    animation: rightAnimated 5s ease-in-out;
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    font-size: 1.5rem;
+}
+
+@keyframes headText {
+    0% {
+        transform: translateX(-1540px) skew(3deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+@keyframes rightAnimated {
+    0% {
+        transform: translateX(1300px) skew(3deg);
+    }
+
+    100% {
+        transform: skew(0deg);
+    }
+}
+
+
+.bgColor-1 {
+    background-color: #edf7fb;
+    max-height: 650px;
+}
+
+
+/* Product Style */
+
+.productContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    justify-content: space-around;
+}
+
+.productContentLeft {
+    margin-right: 50px;
+}
+
+.productContentLeft h1 {
+    color: skyblue;
+    font-size: 50px;
+}
+
+.productContentLeft .dash {
+    display:inline-block;
+    background-color: skyblue;
+    height: 5px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+.productContentLeft h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.textBullet span {
+    display: inline-block;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 20px solid skyblue;
+    width: 0;
+    margin: 10px 10px 10px 0;
+    vertical-align: middle;
+}
+
+.productContentRight {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+    width: 40%;
+}
+
+.topContent {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.bottomContent {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: skyblue;
 }
 
