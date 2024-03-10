@@ -451,8 +451,17 @@ body {
 
 /* Contact  Styles */
 
+.contactBgImage {
+    background: url(/images/chromed-frame-background-1.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    height: fit-content;
+}
+
 .contactContainer {
-    margin: 50px auto;
+    margin: 0 auto;
     max-width: 1200px;
     padding: 0 20px;
 }
