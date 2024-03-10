@@ -5,60 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_query.css">
 </head>
 <body>
-    <!-- Nav Bar-->
-    <header>
-        <div class="topBarNav flex">
-            <p class="leftToRight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, tempore.</p>
-            <p class="rightToLeft">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, perferendis.</p>
-        </div>
-        <nav class="navHeader flex">
-            <div class="logoStyle">
-                <img src="/images/logo.png" alt="" height="40">
-            </div>
-            <div class="navMenu flex">
-                <a class="navLinks" href="#">Home</a>
-                <a class="navLinks" href="#">About</a>
-                <a class="navLinks" href="#">Contact</a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
+    <!-- Nav Bar Styling Start -->
+    <header class="topHeader flex">
+        <h1>Touching Lives - Building Communities</h1>
     </header>
-
-    <!-- Hero Section-->
-    <section class="bgImageContainer flex">
-        <div class="mainContent">
-            <a class="contactBtn" href="#">Contact Us</a>
-        </div>
-        <div class="leftAnimated">
-            <h1>Touching Lives</h1>
-        </div>
-        <div class="rightAnimated">
-            <p>Voluntary Organisation in Eti-Osa</p>
-            <p>Opening at 9:00 on Monday</p>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section class="bgColor-1">
-        <div class="productContainer flex">
-            <div class="productContentLeft">
-                <h1>01 <span class="dash"></span></h1>
-                <h2>Innovative Business is <br> Our Sphere</h2>
-                <p class="textBullet"><span></span>Managing Your Career Development</p>
-                <p class="textBullet"><span></span>Leading with Finance</p>
-                <p class="textBullet"><span></span>Harvard Business School Collection</p>
+    <nav class="navBgColor">
+        <div class="navWrapper">
+            <div class="navMenu flex">
+                <div class="navBranding">
+                    <img src="/images/logo.png" alt="" height="60">
+                </div>
+                <ul class="navItem flex">
+                    <li class="navLink"><a href="index.html">Home</a></li>
+                    <li class="navLink"><a href="contact.html">Contact us</a></li>
+                    <li class="navLink"><a href="#">About us</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
-            <div class="productContentRight flex">
-                <p class="topContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quis minima iusto pariatur, delectus ut! Ipsam perferendis placeat accusantium sapiente. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aspernatur suscipit quae, deleniti possimus atque voluptate placeat enim magni iusto?</p>
-                <p class="bottomContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, minus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quod beatae, ipsa incidunt possimus cumque optio, vel eaque deleniti ullam maxime molestiae velit! Fugit voluptates ipsum minus veritatis. Expedita, reprehenderit.</p>
+        </div>   
+    </nav>
+    <!-- Nav Bar Styling End -->
+
+    <!-- Hero Section Style Start -->
+    <section class="bgImage1">
+        <div class="heroPageWrapper">
+            <div class="heroContent flex">
+                <h1>Make a difference. Start Volunteering.</h1>
+                <button class="membershipBtn">Learn More</button>
+            </div>
+        </div>    
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Carousel Section Start -->
+    <div class="carouselWrapper">
+        <ul class="carouselMain">
+            <li class="carouselItem carouselItemActive flex"><h2>Building Communities Through People</h2><a href="read_more.html" class="readMoreBtn">Read More</a></li>
+            <li class="carouselItem flex"><img src="/images/_ff140adc-dd87-4cc8-bcd8-a24c17cd6a5b.jpeg" alt=""><h2>Fostering a culture of peace, harmony, and tolerance among diverse ethnic groups in Nigeria.</h2></li>
+            <li class="carouselItem flex"><img src="/images/_3ee5d459-135c-400b-9cef-4ff235c775bb.jpeg" alt=""><h2>Enhancing the capacity and participation of local communities in development processes.
+            </h2></li>
+            <li class="carouselItem flex"><img src="/images/_131fedcd-1b67-4a7b-816d-e838c6907869.jpeg" alt=""><h2>Support underprivileged individuals, groups, communities.</h2></li>
+            <li class="carouselBtnCircle flex">
+                <span class="carouselBtn carouselBtnActive"></span>
+                <span class="carouselBtn"></span>
+                <span class="carouselBtn"></span>
+                <span class="carouselBtn"></span>
+            </li>
+        </ul>
+    </div>
+    <!-- Carousel Section End -->
+
+    <!-- Our Values Section -->
+    <div class="bgValueWrapper">
+        <div class="mainValueWrapper">
+            <div class="valueCardHolder grid">
+                <h1 class="valueHeader">Our Values</h1>
+                <div class="item vauleCard flex">
+                    <h2>Integrity</h2>
+                    <p>We act with honesty, transparency, and accountability in everything we do. We uphold the highest ethical standards and respect the laws and regulations of the country. We do not tolerate any form of corruption, fraud, or misuse of resources.</p>
+                    <a href="">More</a>
+                </div>
+                <div class="item vauleCard flex">
+                    <h2>Care</h2>
+                    <p>We care for the well-being and dignity of every person we work with and serve. We empathize with their needs, challenges, and aspirations. We provide them with compassionate and quality support and services. We protect them from any harm or abuse.</p>
+                    <a href="">More</a>
+                </div>
+                <div class="item vauleCard flex">
+                    <h2>Excellence</h2>
+                    <p>We strive for excellence in our work and results. We use evidence-based approaches and innovative solutions to address the complex and evolving needs of the communities. We continuously learn, improve, and adapt to deliver the best outcomes and impact.</p>
+                    <a href="">More</a>
+                </div>
+                <div class="item vauleCard flex">
+                    <h2>Respect</h2>
+                    <p>We respect the diversity, culture, and identity of every person and community we work with and serve. We value their opinions, perspectives, and contributions. We treat them with courtesy, fairness, and equality. We honor their rights and choices.</p>
+                    <a href="">More</a>
+                </div>
+                <div class="item vauleCard flex">
+                    <h2>Commitment</h2>
+                    <p>We are committed to our vision, mission, and values. We are dedicated to the cause of building communities through people. We work with passion, enthusiasm, and professionalism. We persevere in the face of challenges and difficulties.</p>
+                    <a href="">More</a>
+                </div>
+                <div class="item vauleCard flex">
+                    <h2>Relationships</h2>
+                    <p>We build and maintain positive and trusting relationships with our stakeholders, partners, and beneficiaries. We collaborate and cooperate with them to achieve our common goals and objectives. We communicate and engage with them openly and respectfully.</p>
+                    <a href="">More</a>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- Our Values Section End -->
+
+    <!-- Footer -->
+    <footer>
+        
+    </footer>
+    
+    <script src="main.js"></script>
 </body>
 </html>

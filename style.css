@@ -1,4 +1,20 @@
-/* Utilities */
+/* Google Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+/* Google Fonts Import End */
+
+/* Root Variables */
+
+:root {
+    --bgColor1: #f9f8f6;
+    --mainBg: #9CCBA2;
+    --darkBg: #355326;
+}
+
+
+/* CSS RESET */
 
 * {
     padding: 0;
@@ -6,10 +22,24 @@
     box-sizing: border-box;
 }
 
+/* CSS RESET End */
+
+
+/* Utilities */
+
 a {
     display: block;
     text-decoration: none;
     color: #000;
+}
+
+span {
+    display: block;
+}
+
+ul li {
+    display: block;
+    list-style: none;
 }
 
 .flex {
@@ -18,251 +48,506 @@ a {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+}
+
+body {
+    background-color: var(--bgColor1);
+}
+
+/* Utilities Style End */
+
 /* Nav Styling */
 
-header {
-    background-color: #edf7fb;
-    padding: 10px 15px;
-    height: 90px;
+.topHeader {
+    font-family: 'Agbalumo', cursive;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid greenyellow;
+    box-shadow: 0px 0px 5px 4px rgb(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 0px var(--mainBg);
+    background-color: var(--bgColor1);
 }
 
-.topBarNav {
-    margin-bottom: 20px;
-    border: 1px solid rgb(58, 158, 62);
-    overflow: hidden;
-    justify-content: center;
-    gap: 500px;
-}
-
-.leftToRight {
-    animation: leftToRight 10s infinite linear;
-}
-
-@keyframes leftToRight {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.rightToLeft {
-    animation: leftToRight 10s infinite linear;
-}
-
-@keyframes leftToRight {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(100%);
-    }
-}
-
-.logoStyle {
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-}
-
-.navLinks {
-    height: 25px;
-    transition: 0.5s ease-in-out;
-}
-
-.navHeader {
-    align-items: center;
-    position: relative;
-}
-
-.navHeader .navLinks {
-    margin: 0 45px;
-}
-
-.navLinks:hover {
-    border-top: 2px solid rgb(58, 158, 62);
-    border-bottom: 2px solid rgb(58, 158, 62);
-    background-color: #000;
-    color: #fff;
-    height: 20px;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px auto;
-}
-
-/* Hero Styles */
-
-.bgImageContainer {
-    outline: 2px solid #000;
-    background-image: url(/images/Untitled\ design.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-    min-height: 600px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.mainContent {
-    background-image: url(/images/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    min-height: 400px;
-    width: 400px;
-    border-radius: 20px;
-    display: inline-block;
-    box-shadow: 12px 29px 81px 0px rgba(0,0,0,0.75);
-    position: relative;
+.navBgColor {
+    background-image: linear-gradient(to bottom, #23a823, white);
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.2) inset;
+    width: 100%;
+    position: sticky;
+    top: 0;
     z-index: 10;
 }
 
-.contactBtn {
-    position: absolute;
-    bottom: 15px;
-    left: 160px;
-    background-color: #000;
-    width: 100px;
-    text-align: center;
-    padding: 10px 0;
-    border-radius: 0 10px 0 10px;
-    transition: 0.5s ease-in-out;
-    color: #fff;
+.navWrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-.contactBtn:hover {
-    background-color: rgb(58, 158, 62);
+.navBranding {
+    text-align: center;
+}
+
+.navBranding img {
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px 0px green;
+}
+
+.navMenu {
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navItem {
+    gap: 50px;
+}
+
+.navLink {
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+}
+
+.navLink a {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 20px;
+    font-family: 'Lobster', cursive;
+    padding: 20px 40px;
+}
+
+.navLink a:hover {
+    background-color: #355326;
+    color: whitesmoke;
+}
+
+.hamburgerMenu {
+    opacity: 0;
+    border: 1px solid #000;
+    height: 20px;
+    width: 30px;
+}
+
+/* Nav Style End */
+
+/* Hero Section Style */
+
+.bgImage1 {
+    background-image: url(/images/Untitled\ design.svg);
+    height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.heroPageWrapper {
+    max-width: 1200px;
+    padding: 0 40px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.heroContent {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'Agbalumo', cursive;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: var(--mainBg);
+}
+
+.membershipBtn {
+    padding: 2% 4%;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.membershipBtn:hover {
+    background-color: var(--mainBg);
+    color: var(--bgColor1);
+}
+
+/* Hero Section End */
+
+
+
+/* Carousel Section Style */
+
+.carouselWrapper {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 400px;
+}
+
+.carouselMain {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.carouselItem {
+    position: absolute;
+    flex-direction: column-reverse;
+    opacity: 0;
+    width: 100%;
+    transition: 200ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.carouselItem img {
+    width: 100%;
+    height: 500px;
+    display: block;
+    object-fit: contain;
+    animation: display 10s infinite;
+}
+
+.carouselItem .readMoreBtn {
+    position: absolute;
+    bottom: -20%;
+    right: 30%;
+    left: 35%;
+    z-index: 2;
+    background-color: var(--mainBg);
+    padding: 20px;
+    border-radius: 10px;
+    transition: 0.4s ease-out all;
+}
+
+.carouselItem .readMoreBtn:hover {
+    background-color: #355326;
+    color: var(--bgColor1);
+}
+
+.carouselMain :first-child h2 {
+    font-size: 4.2rem;
+    width: 40%;
+    text-align: center;
+    font-family: 'Agbalumo', cursive;
+    justify-self: center;
+    margin-top: 250px;
+}
+
+.carouselItem > :first-child ~ :nth-child(2) {
+    font-family: 'Agbalumo', cursive;
+    color:#000;
+    text-shadow: 2px 2px 0px var(--bgColor1);
+    margin: 10px 0;
+    width: 30%;
+    text-align: center;
+}
+
+.carouselMain .carouselItem img {
+    object-fit: cover;
+    width: 700px;
+    height: 700px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.carouselBtnCircle {
+    position: absolute;
+    bottom: -55%;
+    gap: 40px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.carouselBtn {
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color :#355326;
+    cursor: pointer;
+}
+
+.carouselBtnActive {
+    background-color: #999;
+}
+
+.carouselItemActive {
+    opacity: 1;
+    transition: 0.5s ease-in-out all;
+}
+
+/* Carousel Style End */
+
+
+/* Read More Page */
+
+.workWrapper {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.socialEventHolder {
+    margin: 20px 0;
+}
+
+.socialEventHolder h1 {
+    margin: 10px 0;
+}
+
+.gridPhotos {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 0;
+}
+
+.slidePhotos {
+    width: fit-content;
+    height: 500px;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+    animation: slideEffect 12s infinite;
+    border-radius: 20px;
+    border: 10px solid var(--mainBg);
+    box-shadow: 0px 0px 25px 2px rgb(0, 0, 0, 0.3) inset;
+}
+
+@keyframes slideEffect {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+}
+
+
+.slidePhotos:nth-child(2) {
+    animation-delay: 2s;
+}
+.slidePhotos:nth-child(3) {
+    animation-delay: 4s;
+}
+.slidePhotos:nth-child(4) {
+    animation-delay: 6s;
+}
+.slidePhotos:nth-child(5) {
+    animation-delay: 8s;
+}
+.slidePhotos:nth-child(6) {
+    animation-delay: 10s;
+}
+
+/* Our Value Style */
+
+
+.bgValueWrapper {
+    background-color: #999;
+    height: 1000px;
+}
+
+.mainValueWrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    height: fit-content;
+}
+
+.valueCardHolder {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "valueHeader valueHeader valueHeader"
+    "card card card"
+    "card card card";
+    gap: 10%;
+}
+
+.valueHeader {
+    grid-area: valueHeader;
+    place-self: center;
+    margin-top: 50px;
+    font-family: 'Agbalumo', cursive;
+    font-size: 2.5rem;
+}
+
+.valueCard {
+    grid-area: card;
+}
+
+.item {
+    flex-direction: column;
+    width: 110%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainBg);
+    /* padding: 20px 60px; */
+    height: 120%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+}
+
+.item h2 {
+    margin-bottom: 20px;
+    font-family: 'Agbalumo', cursive;
+}
+
+.item p {
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    width: 80%;
+}
+
+.item a {
+    font-family: 'Agbalumo', cursive;
+    position: relative;
+}
+
+.item a::after {
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 50%;
+    right: 50%;
+    background-color: #000;
+    height: 4px;
+    transition: 0.5s ease-in-out all;
+}
+
+.item a:hover::after {
+    left: 0;
+    right: 0;
+}
+
+/* Value Style End */
+
+
+
+/* Contact  Styles */
+
+.contactContainer {
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.mainContactForm {
+    width: 60%;
+    background-color: var(--mainBg);
+    margin-right: 25px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.2);
+}
+
+form {
+    transform: translateX(10%);
+}
+
+.mainContactForm h1 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Agbalumo', cursive;
+}
+
+.mainContactForm input {
+    width: 80%;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 5px solid #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    height: 50px;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.mainContactForm textarea {
+    width: 80%;
+    margin: 20px 0;
+    resize: none;font-family: 'Lobster', cursive;
+    border: none;
+    border-bottom: 5px solid #000;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    outline: none;
+    background-color: transparent;
+    padding: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+form > :first-child ~ :nth-child(8) {
+    display: block;
+    width: 20%;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #355326;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+    font-family: 'Agbalumo', cursive;
+    color: var(--bgColor1);
+}
+
+form > :first-child ~ :nth-child(8):hover {
+    background-color: var(--bgColor1);
     color: #000;
 }
 
-.leftAnimated {
-    border: 2px solid #fff;
-    background-color: #fff;
-    padding: 50px;
-    margin-left: 50px;
-    border-radius: 10px;
-    animation: headText 5s ease-in-out;
-    position: absolute;
-    top: 100px;
-    right: 25px;
-    font-size: 2.3rem;
-    color: rgb(58, 158, 62);
-}
-
-.rightAnimated {
-    border: 2px solid #fff;
-    background-color: #fff;
-    padding: 50px;
-    margin-left: 50px;
-    border-radius: 10px;
-    animation: rightAnimated 5s ease-in-out;
-    position: absolute;
-    top: 300px;
-    left: 10px;
-    font-size: 1.5rem;
-}
-
-@keyframes headText {
-    0% {
-        transform: translateX(-1540px) skew(3deg);
-    }
-
-    100% {
-        transform: skew(0deg);
-    }
-}
-
-@keyframes rightAnimated {
-    0% {
-        transform: translateX(1300px) skew(3deg);
-    }
-
-    100% {
-        transform: skew(0deg);
-    }
-}
-
-
-.bgColor-1 {
-    background-color: #edf7fb;
-    max-height: 650px;
-}
-
-
-/* Product Style */
-
-.productContainer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 40px;
-    justify-content: space-around;
-}
-
-.productContentLeft {
-    margin-right: 50px;
-}
-
-.productContentLeft h1 {
-    color: skyblue;
-    font-size: 50px;
-}
-
-.productContentLeft .dash {
-    display:inline-block;
-    background-color: skyblue;
-    height: 5px;
-    width: 30px;
-    vertical-align: middle;
-}
-
-.productContentLeft h2 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.textBullet span {
-    display: inline-block;
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 20px solid skyblue;
-    width: 0;
-    margin: 10px 10px 10px 0;
-    vertical-align: middle;
-}
-
-.productContentRight {
-    margin-top: 20px;
-    padding: 40px 20px;
-    background-color: #fff;
+.contactDetails {
     flex-direction: column;
-    border-radius: 20px 0 0 20px;
     width: 40%;
+    font-family: 'Agbalumo', cursive;
 }
 
-.topContent {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 40px;
+.contactCard {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 0;
+    height: 150px;
+    padding: 40px;
+    background-color: var(--mainBg);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.2);
 }
 
-.bottomContent {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: skyblue;
+.contactCard > :first-child ~ :nth-child(2) {
+    margin-top: 20px;
+    font-family: 'Lobster', cursive;
 }
 
+.contactCard img {
+    margin-right: 10px;
+}
+
+/* Contact Styles End */

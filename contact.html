@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <!-- Nav Bar Styling Start -->
+    <header class="topHeader flex">
+        <h1>Touching Lives - Building Communities</h1>
+    </header>
+    <nav class="navBgColor">
+        <div class="navWrapper">
+            <div class="navMenu flex">
+                <div class="navBranding">
+                    <img src="/images/logo.png" alt="" height="60">
+                </div>
+                <ul class="navItem flex">
+                    <li class="navLink"><a href="index.html">Home</a></li>
+                    <li class="navLink"><a href="contact.html">Contact us</a></li>
+                    <li class="navLink"><a href="#">About us</a></li>
+                </ul>
+                <div class="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>   
+    </nav>
+    <!-- Nav Bar Styling End -->
+
+
+    <div class="contactContainer flex">
+        <div class="mainContactForm">
+            <h1>Contact us</h1>
+            <form action="">
+                <label for="name"></label>
+                <input type="text" name="Name" id="name" placeholder="Enter your name..." required title="Name"><br>
+                <label for="email"></label>
+                <input type="text" name="Email" id="email" placeholder="Enter a valid email address" required title="Email"><br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Write a message..." required title="Enter a message"></textarea>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="contactDetails flex">
+            <div class="contactCard flex">
+                <span><img src="/images/icons8-phone-64.png" alt="" height="24">Call US</span>
+                <span>1 (234) 567-891, 1 (234) 987-654</span>
+            </div>
+            <div class="contactCard flex">
+                <span><img src="/images/icons8-location-50.png" alt="" height="24">Location</span>
+                <span>121 Rock Street, 21 Avenue, New York, NY 92103-9000</span>
+            </div>
+            <div class="contactCard flex">
+                <span><img src="/images/icons8-clock-50.png" alt="" height="24">Business hours</span>
+                <span>Mon - Fri..... 10 am - 8pm, Sat, Sun ....... Closed</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
