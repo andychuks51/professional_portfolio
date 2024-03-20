@@ -16,3 +16,28 @@ document.querySelectorAll('.carouselWrapper').forEach(carouselWrapper => {
         });
     });
 });
+
+
+let coll = document.querySelectorAll(".collapsibleBtn");
+let i;
+
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let content = this.firstElementChild;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "10px";
+    }
+  });
+}
+
+const hamburga = document.querySelector('.hamburgerMenu');
+const navItem = document.querySelector('.navItem');
+
+hamburga.addEventListener('click', () => {
+  hamburga.classList.toggle('change');
+  navItem.classList.toggle('change');
+});

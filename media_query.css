@@ -1,1 +1,626 @@
-/* Mobile Phones Screen */
+/* Tablets Screens */
+
+@media only screen and ( 481px <= width <= 900px ) {
+    /* Nav style start */
+
+    .topHeader h1 {
+        font-size: 1.5rem;
+    }
+
+    .navBranding img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navLink a {
+        padding: 20px;
+    }
+
+    /* nav style End */
+
+
+    /* Hero page style */
+
+    .heroContent {
+        gap: 50px;
+    }
+
+    .heroContent h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Hero page Style End */
+
+
+    /* Carousel Style */
+
+    .carouselMain :first-child h2 {
+        font-size: 2.5rem;
+        margin-top: 300px;
+    }
+
+    .readMoreBtn {
+        bottom: -60%;
+    }
+
+    /* Carousel Style End */
+
+
+    /* Our Value Style */
+
+    .valueCardHolder {
+        grid-auto-rows: 0.4fr 1fr 1fr;
+        gap: 5%;
+    }
+
+    .valueHeader {
+        margin-top: 20px;
+    }
+
+    .item h2 {
+        padding: 20px 0;
+    }
+
+    .item h2::after {
+        bottom: -20%;
+        height: 1px;
+    }
+
+    .item p {
+        padding: 5px 0;
+        margin-bottom: 5px;
+    }
+
+    /* Other Session Style */
+
+    .leftContentContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .leftContentContainer p {
+        font-size: 1rem;
+    }
+
+    .rightContentContainer {
+        width: 50%;
+    }
+
+    .tipContainer div {
+        font-size: 0.8rem;
+    }
+
+    /* Other Session Style End */
+
+
+    /* faq Container */
+
+    .faqCards h2 {
+        font-size: 1rem;
+        margin: 2px auto;
+        width: 90%;
+    }
+    
+    .faqCards p {
+        margin: 5px auto;
+    }
+
+    /* faq Container End */
+
+
+    /* footer Styles */
+
+    .logoBrandingHeader h1 {
+        font-size: 1rem;
+    }
+
+    .logoBrandingHeader img {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    .footItems a {
+        font-size: 0.8rem;
+    }
+
+    .footItems a::after {
+        bottom: -2%;
+    }
+
+    .footItems span {
+        width: 40%;
+        font-size: 0.8rem;
+    }
+
+    .footerMenuContainer {
+        margin-bottom: 80px;
+    }
+
+    .footerMenuContainer h2 {
+        font-size: 1rem ;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    body, html { 
+        overflow-x: clip; 
+    }
+
+    /* Nav Bar Style */
+
+    .navItem {
+        position: absolute;
+        left: -200%;
+        top: 79px;
+        width: 100%;
+        padding: 20px 0;
+        flex-direction: column;
+        background-color: var(--mainBg);
+        transition: 0.5s ease-in-out;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .navLink {
+        text-align: center;
+        box-shadow: none;
+    }
+
+    .navLink a {
+        padding: 10px;
+        transition: 0.4s ease-in-out;
+    }
+
+    .navItem.change {
+        left: 0;
+    }
+
+    .topHeader h1 {
+        font-size: 1rem;
+    }
+
+    .navBranding img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburgerMenu {
+        display: flex;
+        opacity: 1;
+        height: fit-content;
+        width: 35px;
+        flex-direction: column;
+    }
+
+    .bar {
+        background-color: #000;
+        width: 100%;
+        height: 3px;
+        margin: 6px 0;
+        transition: 0.4s ease-in-out;
+    }
+
+    .hamburgerMenu.change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburgerMenu.change .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .hamburgerMenu.change .bar:nth-child(3) {
+        transform: translateY(-20px) rotate(-45deg);
+    }
+
+    /*Nav Bar Style End */
+
+
+    /* hero page style */
+    .bgImage1 {
+        height: 350px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+    }
+
+    .heroPageWrapper {
+        padding: 0 40px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    
+    .heroContent {
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: var(--mainBg);
+    }
+
+    .membershipBtn {
+        font-size: 1.1rem;
+    }
+
+    /* Hero Section End */
+
+
+
+    /* Carousel Section Style */
+
+    .carouselWrapper {
+        height: 400px;
+        background-size: 100% center;
+        background-position: top;
+    }
+
+    .carouselMain {
+        margin: auto;
+        width: 50%;
+        position: relative;
+        height: 250px;
+    }
+
+    .carouselItem {
+        margin-top: 50px;
+        height: 100%;
+    }
+
+    .readMoreBtn {
+        bottom: -15%;
+    }
+
+    .carouselMain .carouselItem img {
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4);
+        border-radius: 10px;
+    }
+
+    .carouselBtnCircle {
+        gap: 30px;
+        bottom: -55%;
+    }
+
+    .carouselBtn {
+        height: 15px;
+        width: 15px;
+    }
+
+    .carouselItem > :first-child ~ :nth-child(2) {
+        font-family: 'Rubik', sans-serif;
+        font-size: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .carouselMain :first-child h2 {
+        font-size: 0.9rem;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
+        justify-self: center;
+        align-self: center;
+        margin-top: 100px;
+    }
+
+    /* Carousel Style End */
+
+    /* Our Value Style */
+
+    .bgValueWrapper {
+        background-color: var(--bgColor1);
+        height: 600px;
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4);
+    }
+
+    .valueCardHolder {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 20px 1fr 1fr 1fr;
+        grid-template-areas: 
+        "valueHeader valueHeader"
+        "card card"
+        "card card"
+        "card card";
+        gap: 5%;
+    }
+
+    .valueHeader {
+        grid-area: valueHeader;
+        /* place-self: center; */
+        margin: 20px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.2rem;
+        margin-top: 20px;
+        user-select: none;
+    }
+
+    .item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--mainBg);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+    }
+
+    .item h2 {
+        font-family: 'Rubik', sans-serif;
+        position: relative;
+        font-size: 0.8rem;
+        margin: 10px 0;
+        height: 10%;
+        user-select: none;
+    }
+    
+    .item p {
+        margin-bottom: 10px;
+        font-family: 'Karla', sans-serif;
+        width: 70%;
+        margin-bottom: 15px;
+        font-size: 0.5rem;
+        height: 90%;
+    }
+
+    .item h2::after {
+        height: 2px;
+    }
+
+    /* Value Style End */
+
+
+/* Other Styles */
+
+    .otherSessionWrapper {
+        height: 500px;
+        background-position: top;
+        background-size: 100% contain;
+    }
+
+    .leftContentContainer h1 {
+        width: 50%;
+        font-size: 1.5em;
+    }
+
+    .leftContentContainer p {
+        font-size: 0.6em;
+        margin-bottom: 30px;
+    }
+
+    .leftContentContainer {
+        width: 100%;
+        align-items: start;
+    }
+
+    .otherMainContainer {
+        flex-direction: column;
+    }
+
+    .rightContentContainer {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .tipContainer {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .tipContainer div {
+        font-size: 0.6rem;
+    }
+
+    
+    /* faq Container */
+    .faqSectionWrapper {
+        padding: 0 20px;
+        margin: 40px 0;
+    }
+
+    .faqContainer {
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .faqContainer img {
+        width: fit-content;
+        height: 50px;
+    }
+    
+    .faqContainer h1 {
+        margin: 5px 0;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1rem;
+    }
+
+    .faqContainer p {
+        margin: 5px 0;
+        width: 80%;
+        font-family: 'Karla', sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .faqCards {
+        margin: 10px 0;
+        width: 80%;
+        padding: 5px 0;
+    }
+
+    .faqCards h2 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 0.7em;
+        width: 95%;
+    }
+
+    .collapsibleBtn::after {
+        right: -19%;
+    }
+
+    .collapseContainer {
+        padding: 0 5px;
+    }
+
+    .collapseContainer p {
+        font-size: 0.6rem;
+    }
+
+    /* Faq container End */
+
+
+    /* Contact Style */
+
+    
+    
+    /* Footer Style */
+
+    .footerContainer {
+        padding: 10px 15px;
+    }
+
+    .footerContent p {
+        margin-top: 10px;
+        font-size: 0.6rem;
+        text-align: start;
+    }
+
+    .logoBrandingHeader {
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-start;
+    }
+
+    .logoBrandingHeader h1 {
+        font-size: 0.6rem;
+    }
+
+    .logoBrandingHeader img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footerMenuContainer {
+        height: 100px;
+        margin-bottom: 100px;
+        width: 30%;
+    }
+
+    .footerMenuContainer h2 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .footMenu {
+        gap: 5px;
+    }
+
+    .footItems {
+        width: 100%;
+        font-family: 'Karla', sans-serif;
+    }
+
+    .footItems a {
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .footItems a::after {
+        content: none;
+    }
+
+    .footItems div {
+        width: 10%;
+        margin: 2px;
+    }
+
+    .footItems span {
+        font-size: 0.6rem;
+        width: 100%;
+    }
+
+    .footItems img {
+        display: none;
+        width: 10%;
+        object-fit: contain;
+    }
+
+    /* Footer Style End */
+}
+
+@media only screen and (width <= 360px){
+    
+    /* Our Value Style */
+
+    .bgValueWrapper {
+        background-color: var(--bgColor1);
+        height: 1100px;
+        box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4);
+    }
+    
+    .valueCardHolder {
+        grid-template-columns: 180px;
+        grid-auto-rows: 20px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "valueHeader"
+        "card"
+        "card"
+        "card"
+        'card'
+        'card'
+        'card';
+        gap: 5%;
+        place-content: center;
+        margin-top: 100px;
+    }
+    
+    /* Value Style End */
+
+    /* Other Styles */
+
+    .otherSessionWrapper {
+        width: 100%;
+    }
+
+    .leftContentContainer h1 {
+        width: 60%;
+        white-space: break-spaces;
+        text-align: start;
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .leftContentContainer p {
+        font-family: 'Karla', sans-serif;
+        font-size: 0.5em;
+    }
+
+    .leftContentContainer {
+        width: 100%;
+        align-items: start;
+    }
+
+    .otherMainContainer {
+        flex-direction: column;
+    }
+
+    .rightContentContainer {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .tipContainer {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .tipContainer div {
+        font-size: 0.6rem;
+    }
+}

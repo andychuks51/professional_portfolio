@@ -1,7 +1,7 @@
 /* Google Fonts Import */
 
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 /* Google Fonts Import End */
 
@@ -34,7 +34,7 @@ a {
 }
 
 span {
-    display: block;
+    display: inline-block;
 }
 
 ul li {
@@ -61,7 +61,7 @@ body {
 /* Nav Styling */
 
 .topHeader {
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     height: 40px;
     width: 100%;
     text-align: center;
@@ -69,6 +69,9 @@ body {
     box-shadow: 0px 0px 5px 4px rgb(0, 0, 0, 0.3);
     text-shadow: 2px 2px 0px var(--mainBg);
     background-color: var(--bgColor1);
+    user-select: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.9rem;
 }
 
 .navBgColor {
@@ -106,7 +109,7 @@ body {
 }
 
 .navLink {
-    border: 2px solid black;
+    border: none;
     text-align: center;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
@@ -116,7 +119,7 @@ body {
     width: 100%;
     padding: 5px 0;
     border-radius: 20px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Karla', sans-serif;
     padding: 20px 40px;
 }
 
@@ -126,10 +129,9 @@ body {
 }
 
 .hamburgerMenu {
-    opacity: 0;
-    border: 1px solid #000;
+    display: none;
     height: 20px;
-    width: 30px;
+    width: 35px;
 }
 
 /* Nav Style End */
@@ -158,7 +160,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     font-weight: 600;
     font-size: 2.5rem;
     color: var(--mainBg);
@@ -166,7 +168,7 @@ body {
 
 .membershipBtn {
     padding: 2% 4%;
-    font-family: 'Lobster', cursive;
+    font-family: 'Karla', sans-serif;
     font-size: 1.5rem;
     border-radius: 10px;
     border: none;
@@ -188,18 +190,22 @@ body {
 
 .carouselWrapper {
     width: 100%;
-    height: 500px;
-    margin-bottom: 400px;
+    height: 900px;
+    margin-bottom: 0px;
+    background: url(/images/paper-style-white-monochrome-background_23-2149009544.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .carouselMain {
     margin: 0 auto;
-    width: 100%;
+    /* width: 100%; */
     position: relative;
     height: 500px;
 }
 
 .carouselItem {
+    margin: 20px 0;
     position: absolute;
     flex-direction: column-reverse;
     opacity: 0;
@@ -208,46 +214,40 @@ body {
     transition-delay: 200ms;
 }
 
-.carouselItem img {
-    width: 100%;
-    height: 500px;
-    display: block;
-    object-fit: contain;
-    animation: display 10s infinite;
-}
-
-.carouselItem .readMoreBtn {
+.readMoreBtn {
     position: absolute;
-    bottom: -20%;
-    right: 30%;
-    left: 35%;
+    bottom: -80%;
+    right: 10%;
+    left: 10%;
     z-index: 2;
     background-color: var(--mainBg);
-    padding: 20px;
+    height: 50px;
+    width: 40%;
     border-radius: 10px;
     transition: 0.4s ease-out all;
+    line-height: 3;
 }
-
 .carouselItem .readMoreBtn:hover {
     background-color: #355326;
     color: var(--bgColor1);
 }
 
 .carouselMain :first-child h2 {
-    font-size: 4.2rem;
+    font-size: 3.2rem;
     width: 40%;
     text-align: center;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     justify-self: center;
-    margin-top: 250px;
+    height: 100%;
+    margin-top: 180px;
 }
 
 .carouselItem > :first-child ~ :nth-child(2) {
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     color:#000;
     text-shadow: 2px 2px 0px var(--bgColor1);
     margin: 10px 0;
-    width: 30%;
+    width: 80%;
     text-align: center;
 }
 
@@ -261,7 +261,7 @@ body {
 
 .carouselBtnCircle {
     position: absolute;
-    bottom: -55%;
+    bottom: -70%;
     gap: 40px;
     right: 50%;
     transform: translateX(50%);
@@ -358,42 +358,46 @@ body {
     animation-delay: 6s;
 }
 .slidePhotos:nth-child(5) {
-    animation-delay: 8s;
+    animation-delay: 8s; 
 }
 .slidePhotos:nth-child(6) {
     animation-delay: 10s;
 }
 
+/* Read More End */
+
+
 /* Our Value Style */
 
 
 .bgValueWrapper {
-    background-color: #999;
+    background-color: var(--bgColor1);
     height: 1000px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.4);
 }
 
 .mainValueWrapper {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 20px;
     height: fit-content;
 }
 
 .valueCardHolder {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 0.6fr 1fr 1fr;
     grid-template-areas: 
     "valueHeader valueHeader valueHeader"
     "card card card"
     "card card card";
-    gap: 10%;
+    gap: 15%;
 }
 
 .valueHeader {
     grid-area: valueHeader;
     place-self: center;
     margin-top: 50px;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     font-size: 2.5rem;
 }
 
@@ -403,33 +407,36 @@ body {
 
 .item {
     flex-direction: column;
-    width: 110%;
     justify-content: center;
     align-items: center;
     background-color: var(--mainBg);
     /* padding: 20px 60px; */
-    height: 120%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
 .item h2 {
-    margin-bottom: 20px;
-    font-family: 'Agbalumo', cursive;
+    margin: 15px auto;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    height: 10%;
 }
 
 .item p {
-    margin-bottom: 20px;
-    font-family: 'Lobster', cursive;
+    margin: auto;
+    font-family: 'Karla', sans-serif;
     width: 80%;
+    height: 90%;
+    margin-bottom: 30px;
 }
 
-.item a {
-    font-family: 'Agbalumo', cursive;
-    position: relative;
-}
-
-.item a::after {
+.item h2::after {
     position: absolute;
     content: '';
     bottom: -5px;
@@ -440,24 +447,190 @@ body {
     transition: 0.5s ease-in-out all;
 }
 
-.item a:hover::after {
+.item h2:hover::after {
     left: 0;
     right: 0;
 }
 
 /* Value Style End */
 
+/* Other Styles */
 
+.otherSessionWrapper {
+    background: url(/images/white-3d-paper-style-wallpaper_23-2148400294\ \(1\).jpg);
+    height: 700px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.otherMainContainer {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.leftContentContainer {
+    flex-direction: column;
+    width: 40%;
+    align-items: start;
+    gap: 20px;
+}
+
+.leftContentContainer h1 {
+    width: 70%;
+    white-space: break-spaces;
+    text-align: start;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3em;
+}
+
+.leftContentContainer p {
+    font-family: 'Karla', sans-serif;
+    font-size: 1.2em;
+}
+
+.rightContentContainer {
+    width: 40%;
+    flex-direction: column;
+    border: 1px solid #999;
+    padding: 0 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+}
+
+.lineBreak {
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+
+.tipContainer {
+    text-align: start;
+    margin: 50px 0;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.tipContainer div {
+    white-space: nowrap;
+    font-size: 1rem;
+    width: 80%;
+}
+
+.tipContainer img {
+    width: 10%;
+}
+
+.tipContainer span {
+    font-weight: 900;
+}
+
+/* Other Styles End */
+
+/* faq Container */
+
+.faqSectionWrapper {
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1200px;
+    height: max-content;
+}
+
+.faqContainer {
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid #999;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.faqContainer h1 {
+    margin: 15px 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+.faqContainer p {
+    margin: 15px 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.faqCards {
+    margin: 20px 0;
+    width: 65%;
+    border-radius: 10px;
+    border: 1px solid #999;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 0;
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.5) inset;
+}
+
+.faqCards h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3em;
+}
+
+.collapsibleBtn {
+    border: none;
+    background-color: transparent;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.collapsibleBtn::after {
+    content: '\02795';
+    font-size: 13px;
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+.active:after {
+    content: "\2796"; 
+}
+
+.collapseContainer {
+    width: 80%;
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    text-align: start;
+    transition: max-height 0.8 ease-in-out;
+}
+
+.collapseContent {
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+/* faq Container End */
 
 /* Contact  Styles */
 
-.contactBgImage {
-    background: url(/images/chromed-frame-background-1.png);
-    background-repeat: no-repeat;
+.contactHeroBg {
+    background: url(/images/World\ Map\ \(1\).svg);
     width: 100%;
-    background-size: cover;
-    background-position: center center;
-    height: fit-content;
+    height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.contactBgImage {
+    background: var(--bgColor1);
+    width: 100%;
 }
 
 .contactContainer {
@@ -482,7 +655,7 @@ form {
 .mainContactForm h1 {
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 
 .mainContactForm input {
@@ -496,13 +669,13 @@ form {
     background-color: transparent;
     height: 50px;
     padding: 20px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Karla', sans-serif;
 }
 
 .mainContactForm textarea {
     width: 80%;
     margin: 20px 0;
-    resize: none;font-family: 'Lobster', cursive;
+    resize: none;font-family: 'Karla', sans-serif;
     border: none;
     border-bottom: 5px solid #000;
     border-bottom-left-radius: 20px;
@@ -510,7 +683,7 @@ form {
     outline: none;
     background-color: transparent;
     padding: 20px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Karla', sans-serif;
 }
 
 form > :first-child ~ :nth-child(8) {
@@ -523,7 +696,7 @@ form > :first-child ~ :nth-child(8) {
     border-radius: 10px;
     transition: 0.5s ease-out;
     cursor: pointer;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
     color: var(--bgColor1);
 }
 
@@ -535,7 +708,7 @@ form > :first-child ~ :nth-child(8):hover {
 .contactDetails {
     flex-direction: column;
     width: 40%;
-    font-family: 'Agbalumo', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 
 .contactCard {
@@ -552,7 +725,7 @@ form > :first-child ~ :nth-child(8):hover {
 
 .contactCard > :first-child ~ :nth-child(2) {
     margin-top: 20px;
-    font-family: 'Lobster', cursive;
+    font-family: 'Karla', sans-serif;
 }
 
 .contactCard img {
@@ -560,3 +733,135 @@ form > :first-child ~ :nth-child(8):hover {
 }
 
 /* Contact Styles End */
+
+/* Footer Style Style */
+
+.footerBgColor {
+    background: var(--darkBg);
+}
+
+.footerContainer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 40px 20px;
+    justify-content: space-between;
+    color: var(--bgColor1);
+}
+
+.footerContent {
+    width: 25%;
+}
+
+.footerContent p {
+    margin-top: 20px;
+    font-family: 'Karla', sans-serif;
+    user-select: none;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.logoBrandingHeader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoBrandingHeader h1 {
+    font-size: 1.3em;
+    font-family: 'Rubik', sans-serif;
+    color: var(--bgColor1);
+}
+
+.logoBrandingHeader img {
+    margin-right: 10px;
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.2);
+}
+
+.footerMenuContainer {
+    width: 25%;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerMenuContainer h2 {
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+}
+
+.footMenu {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.footItems {
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+.footItems a{
+    width: fit-content;
+    position: relative;
+    user-select: none;
+    font-family: 'Karla', sans-serif;
+    color: var(--bgColor1);
+}
+
+.footItems a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0%;
+    right: 100%;
+    background-color: var(--bgColor1);
+    height: 2px;
+    transition: 0.5s ease-in-out all;
+}
+
+.footItems a:hover::after {
+    right: 0;
+}
+
+.footItems div {
+    width: 20%;
+    margin: 5px;
+}
+
+.footItems img {
+    width: 50%;
+    object-fit: contain;
+}
+
+.footItems span {
+    width: 50%;
+    text-align: left;
+}
+
+.lineBreak2 {
+    background-color: #000;
+    height: 1px;
+    width: 100%;
+}
+
+.copyrightSection {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.copyrightText {
+    text-align: center;
+}
