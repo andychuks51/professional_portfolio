@@ -139,7 +139,7 @@ body {
 /* Hero Section Style */
 
 .bgImage1 {
-    background-image: url(/images/Untitled\ design.svg);
+    background-image: url(/images/Untitled design.svg);
     height: 550px;
     width: 100%;
     background-repeat: no-repeat;
@@ -365,6 +365,18 @@ body {
 }
 
 /* Read More End */
+
+
+
+/* About Us Style */
+
+.heroAboutUsWrapper {
+    background: url("/images/about_us_bg.jpg");
+    background-size: 100%;
+    background-position: center;
+    height: 550px;
+    width: 100%;
+}
 
 
 /* Our Value Style */
