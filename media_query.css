@@ -19,6 +19,53 @@
     /* nav style End */
 
 
+    /* Contact Style */
+
+    .contactHeroBg {
+        height: 300px;
+    }
+
+    .contactContainer {
+        justify-content: space-between;
+    }
+
+    .mainContactForm {
+        transform: translateX(5%);
+    }
+
+    .mainContactForm input {
+        text-align: center;
+        width: 90%;
+    }
+
+    .mainContactForm textarea {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contactBtn {
+        margin: 0 auto;
+        padding: 0;
+        height: 30px;
+        transform: translateX(5%);
+    }
+
+    .contactDetails {
+        width: 35%;
+    }
+
+    .contactCard {
+        height: 130px;
+    }
+
+    .contactText {
+        margin: 5px 0;
+    }
+
+    /* Contact Styles End */
+
+
+
     /* Hero page style */
 
     .heroContent {
@@ -74,6 +121,7 @@
     /* Other Session Style */
 
     .leftContentContainer h1 {
+        width: 80%;
         font-size: 2.5rem;
     }
 
@@ -128,7 +176,7 @@
     }
 
     .footItems span {
-        width: 40%;
+        width: 70%;
         font-size: 0.8rem;
     }
 
@@ -248,6 +296,102 @@
     }
 
     /* Hero Section End */
+
+
+    /* Carousel Section Style */
+
+    .readMoreBtn {
+        line-height: 6;
+    }
+
+    /* Carousel Style End */
+
+
+    /* Contact Styles */
+
+    .contactHeroBg {
+        height: 150px;
+    }
+
+    .contactContainer {
+        flex-direction: column-reverse;
+    }
+
+    .mainContactWrapper {
+        margin: 20px auto;
+        width: 90%;
+        height: 410px;
+        padding: 20px;
+    }
+
+    .mainContactForm {
+        transform: translateX(5%);
+    }
+
+    .mainContactWrapper h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .mainContactForm input {
+        text-align: center;
+        width: 90%;
+        padding: 15px;
+        height: 20px;
+        margin: 8px 0;
+    }
+
+    .mainContactForm textarea {
+        width: 90%;
+        text-align: center;
+        margin: 8px 0;
+        padding: 10px;
+    }
+
+    .contactBtn {
+        margin: 5px auto;
+        padding: 0;
+        height: fit-content;
+        width: fit-content;
+        /* transform: translateX(20%); */
+        padding: 10px;
+    }
+
+    .contactDetails {
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    
+    .contactCard {
+        width: 30%;
+        height: 130px;
+        margin: 20px 0;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .contactText {
+        margin: auto;
+        font-family: 'Karla', sans-serif;
+        font-size: 0.6rem;
+        text-align: center;
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .contactCard img {
+        margin: 10px 0;
+        margin-right: 5px;
+        width: 15px;
+        height: 15px;
+        object-fit: contain;
+    }
+
+
+
+    /* Contact Styles End */
 
 
 
@@ -384,7 +528,7 @@
     }
 
     .leftContentContainer h1 {
-        width: 50%;
+        width: 40%;
         font-size: 1.5em;
     }
 
